@@ -1,0 +1,143 @@
+<web-app>
+    <!-- AUTH -->
+    <servlet>
+        <servlet-name>auth</servlet-name>
+        <servlet-class>ru.eltech.project.server.servlet.auth.AuthServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>auth</servlet-name>
+        <url-pattern>/auth</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>registration</servlet-name>
+        <servlet-class>ru.eltech.project.server.servlet.auth.RegistrationServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>registration</servlet-name>
+        <url-pattern>/registration</url-pattern>
+    </servlet-mapping>
+
+    <!-- Shoes -->
+
+    <servlet>
+        <servlet-name>getShoe</servlet-name>
+        <servlet-class>ru.eltech.project.server.servlet.shoes.GetShoeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>getShoe</servlet-name>
+        <url-pattern>/getShoe</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addShoe</servlet-name>
+        <servlet-class>ru.eltech.project.server.servlet.shoes.AddShoeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addShoe</servlet-name>
+        <url-pattern>/addShoe</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateShoe</servlet-name>
+        <servlet-class>ru.eltech.project.server.servlet.shoes.UpdateShoeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>updateShoe</servlet-name>
+        <url-pattern>/updateShoe</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addShoeSize</servlet-name>
+        <servlet-class>ru.eltech.project.server.servlet.shoes.AddShoeSizeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addShoeSize</servlet-name>
+        <url-pattern>/addShoeSize</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>delShoeSize</servlet-name>
+        <servlet-class>ru.eltech.project.server.servlet.shoes.DelShoeSizeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>delShoeSize</servlet-name>
+        <url-pattern>/delShoeSize</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>getAllShoeSize</servlet-name>
+        <servlet-class>ru.eltech.project.server.servlet.shoes.GetAllShoeSizeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>getAllShoeSize</servlet-name>
+        <url-pattern>/getAllShoeSize</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>delShoe</servlet-name>
+        <servlet-class>ru.eltech.project.server.servlet.shoes.DelShoeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>delShoe</servlet-name>
+        <url-pattern>/delShoe</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getAllShoes</servlet-name>
+        <servlet-class>ru.eltech.project.server.servlet.shoes.GetAllShoesServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>getAllShoes</servlet-name>
+        <url-pattern>/getAllShoes</url-pattern>
+    </servlet-mapping>
+
+    <!-- Order -->
+    <servlet>
+        <servlet-name>createOrder</servlet-name>
+        <servlet-class>ru.eltech.project.server.servlet.order.CreateOrdersServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>createOrder</servlet-name>
+        <url-pattern>/createOrder</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getOrder</servlet-name>
+        <servlet-class>ru.eltech.project.server.servlet.order.GetOrderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>getOrder</servlet-name>
+        <url-pattern>/getOrder</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getAllOrders</servlet-name>
+        <servlet-class>ru.eltech.project.server.servlet.order.GetAllOrdersServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>getAllOrders</servlet-name>
+        <url-pattern>/getAllOrders</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>cancelOrder</servlet-name>
+        <servlet-class>ru.eltech.project.server.servlet.order.CancelOrderServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cancelOrder</servlet-name>
+        <url-pattern>/cancelOrder</url-pattern>
+    </servlet-mapping>
+</web-app>
